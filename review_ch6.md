@@ -31,7 +31,7 @@ $p_{n0} = p_{p0}exp(- \frac{qV_D}{K_0T})$
 
 ### 2.理想pn结模型
 pn结总电流密度：<br>
-$J = (\frac{qD_n n_{p0}}{L_n} + \frac{qD_p p_{n0}}{L_p})[exp(\frac{qV}{k_0T}) - 1] = J_s [exp(\frac{qV}{k_0T}) - 1] $ <br>
+$J = (\frac{qD_n n_{p0}}{L_n} + \frac{qD_p p_{n0}}{L_p})[exp(\frac{qV}{k_0 T}) - 1] = J_s [exp(\frac{qV}{k_0 T}) - 1]$ <br>
 $J_s$为反向饱和电流
 
 
