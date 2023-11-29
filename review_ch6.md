@@ -33,7 +33,7 @@ $p_{n0} = p_{p0}exp(- \frac{qV_D}{K_0T})$
 pn结总电流密度：<br>
 $J = (\frac{qD_n n_{p0}}{L_n} + \frac{qD_p p_{n0}}{L_p})[exp(\frac{qV}{k_0 T}) - 1] = J_s [exp(\frac{qV}{k_0 T}) - 1]$ <br>
 $J_s$为反向饱和电流
-
+$J = \left(\frac{{qD_n n_{p0}}}{{L_n}} + \frac{{qD_p p_{n0}}}{{L_p}}\right)\left[\exp\left(\frac{{qV}}{{k_0T}}\right) - 1\right] = J_s \left[\exp\left(\frac{{qV}}{{k_0T}}\right) - 1\right] $
 
 
 
