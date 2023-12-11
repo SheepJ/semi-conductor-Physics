@@ -46,9 +46,9 @@ $J = \left(\frac{{qD_n n_{p0}}}{{L_n}} + \frac{{qD_p p_{n0}}}{{L_p}}\right)\left
 $N_A x_p = N_D x_n$ <br>
 
 电势满足泊松方程: <br>
-$\frac{d^2V_1(x)}{dx^2} = \frac{qN_A}{\epsilon_0 \epsilon_r}$ 
+$\frac{d^2V_1(x)}{dx^2} = \frac{qN_A}{\epsilon_0 \epsilon_r}$<br> 
 
-边界条件：在势垒区边界处电场为0，即电势一阶导为0；
+边界条件：在势垒区边界处电场为0，即电势一阶导为0；p区电势为0，n区电势为$V_D$i<br>
 
 
 结论：<br>
@@ -58,7 +58,10 @@ $N_B$是低掺杂一侧的掺杂浓度，$X_D$是低掺杂区域的宽度 <br>
 势垒宽度 $X_D = \sqrt{V_D(\frac{2\epsilon_0 \epsilon_r}{q}) (\frac{N_A + N_D}{N_A N_D})}$
 
 
-
+电容推导：
+$Q = qN_A x_n = \frac{q N_A N_D X_D}{N_A + N_D}$
+将$X_D$用公式代入后，将$Q$对 V 求导 ，得到单位面积势垒电容。<br>
+结论：
 
 
 
