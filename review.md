@@ -76,11 +76,179 @@
 
 
 # 公式
-费米分布、玻尔兹曼分布表达式<br>
-T=300K时的$k_0T$ <br>
-$k_0 = 1.38 \times 10^-23 J/K$ <br>
-导带价带载流子浓度 <br>
-不同温度区间载流子浓度、费米能级推导<br>
-简并条件下的载流子浓度公式 <br>
-爱因斯坦关系式
+1. 有效质量和能带的关系 <br>
+$\frac{1}{m^*} = \frac{d^2 E_k}{\hbar d k^2}$ <br>
+$v = \frac{d E_k}{\hbar d k}$ <br>
+1. 禁带宽度与温度的关系 <br>
+$E_g = E_g(0) - \frac{\alpha T^2}{\beta + T}$ <br>
+
+1. T=300K时的 $k_0T = 0.026eV$ <br>
+1. $k_0 = 1.38 \times 10^-23 J/K$ <br>
+1. 导带价带载流子浓度 <br>
+$n_0 = N_c exp(- \frac{E_c - E_F}{k_0 T})$ <br>
+$p_0 = N_v exp(\frac{E_v - E_F}{k_0 T})$ <br>
+$n_0 p_0 = n_i^2$ <br>
+$n_i = (N_C N_V)^{\frac{1}{2}} exp(- \frac{E_g}{2 k_0 T}) $ <br>
+1. 杂质补偿度<br>
+$\gamma = 1 - \left| \frac{N_D - N_A}{N_D + N_A} \right|$ <br>
+ 
+1. 费米分布、玻尔兹曼分布表达式 <br>
+$f = \frac{1}{e^{\frac{E - E_F}{k_0 T}} - 1}$ <br>
+-- -- -- -- -- -- -- -- -- --<br>
+$f_B = - e^{\frac{E - E_F}{k_0 T}}$ <br>
+1. 电中性方程，以及不同温度区间载流子浓度、费米能级推导<br>
+1. 简并条件下的载流子浓度公式 <br>
+$n_0 = \frac{2}{\sqrt{\pi}}N_c F_{\frac{1}{2}}(\zeta)$ <br>
+1. 迁移率和温度、掺杂的关系 <br>
+$\mu = \frac{1}{A T^{\frac{3}{2}} + BN T^{- \frac{3}{2}}}$ <br>
+1. 电导率公式 <br>
+$\sigma = nq \mu_n + pq \mu_p$ <br>
+根据掺杂的类型进行简化<br>
+1. 复合率计算公式 <br>
+$\frac{d p}{d t} = - \frac{\Delta p}{\tau_p}$
+结果为 $\Delta p = \Delta p(0) e^{- \frac{t}{\tau}}$ <br>
+
+1. 引入准费米能级后载流子浓度公式 <br>
+$n = n_0 exp(\frac{E_{Fn} - E_F}{k_0 T})$ <br>
+$p = p_0 exp(- \frac{E_{Fp} - E_F}{k_0 T})$ <br>
+$n p = n_i^2 exp(\frac{E_{Fn} - E_{Fp}}{k_0 T})$ <br>
+可以根据以上公式求准费米能级位置<br>
+
+1. 间接复合净复合率、载流子寿命 <br>
+$U = \frac{N_t r_n r_p (np - n_i^2)}{r_n(n + n_1) + r_p(p + p_1)}$ <br>
+$\tau = \frac{r_n (n_0 + n_1) + r_p (p_0 + p_1)}{N_t r_n r_p (n_0 + p_0)} = \tau_p \frac{n_0 + n_1}{n_0 + p_0} + \tau_n \frac{p_0 + p_1}{n_0 + p_0}$ <br>
+其中 $\tau_n = \frac{1}{N_t r_n}$ $\tau_p = \frac{1}{N_t r_p}$ <br>
+
+1. 表面复合率 <br>
+$U_s = s(\Delta p)$ <br>
+其中 s 为表面复合速度 <br>
+
+1. 单位时间扩散积累的空穴数  = 单位时间复合的空穴数<br>
+$D_p \frac{d^2 \Delta p}{d x^2} = \frac{\Delta p}{\tau}$ <br>
+借得稳态扩散方程为 $\Delta p(x) = A exp(- \frac{x}{L_p}) + B exp(\frac{x}{L_p})$ <br>
+其中的 $L_p = \sqrt{D_p \tau_p}$ 为扩散长度 <br>
+
+1. 爱因斯坦关系式 <br>
+$\frac{D_n}{\mu_n} = \frac{k_0 T}{q} = \frac{1}{40} V (300K下)$ <br>
+
+1. 连续性方程 <br>
+$\frac{\partial p }{\partial t} = D_p \frac{\partial^2 p}{\partial x^2} - \mu_p E \frac{\partial p}{\partial x} - \mu_p p \frac{\partial E}{\partial x} - \frac{\Delta p}{\tau} + g_p$
+
+1. pn结接触电势差 <br>
+$V_D = \frac{k_0 T}{q} ln \frac{N_D N_A}{n_i^2}$ <br>
+
+1. pn结扩散区多子少子浓度关系<br>
+$n_{p0} = n_{n0} exp(- \frac{q V_D}{k_0 T})$ <br>
+$p_{n0} = p_{p0} exp(- \frac{q V_D}{k_0 T})$ <br>
+
+1. pn结电流密度公式(肖克莱方程) <br>
+$J = J_s [exp(\frac{q V}{k_0 T}) - 1 ]$ <br>
+$Js = \frac{q D_n n_{p0}}{L_n} + \frac{q D_p p_{n0}}{L_p}$
+
+1. 突变结势垒宽度、最大电场、单位面积势垒电容 <br>
+$X_D = \sqrt{\frac{2 \epsilon_0 \epsilon_r}{q} \frac{N_A + N_D}{N_A N_D} V_D}$ <br>
+$E_m = \frac{q N_B X_D}{\epsilon_0 \epsilon_r}$ <br>
+$C = \sqrt{\frac{\epsilon_0 \epsilon_r q N_A N_D}{2(N_A + N_D)(V_D - V)}}$ <br>
+
+1. 金半接触扩散理论和热电子发射理论求得的电流 J-V特性 <br>
+$J = J_{sD} exp(\frac{q V}{k_0 T})$ <br>
+$J = J_{sT} [exp(\frac{q V}{k_0 T}) - 1]$ <br>
+
+1. 德拜长度 <br>
+$L_D = \sqrt{\frac{\epsilon_0 \epsilon_r k_0 T}{q^2 p_{p0}}}$ <br>
+与温度和多子浓度有关<br>
+
+1. 强反型条件 <br>
+$V_s \ge 2 V_B = 2\frac{k_0 T}{q} ln \frac{N_A}{n_i}$ <br>
+使得 $V_s = 2 V_B$ 的外加电压 $V_G$ 称为开启电压 <br>
+
+
+
+# 图
+1. 金刚石结构、闪锌矿结构图 <br>
+
+
+1. 掺杂能带图<br>
+
+1. 第一布里渊区 E-k 关系图<br>
+
+1. 载流子的形成过程<br>
+
+1. 费米函数f-T图<br>
+
+1. 四探针法原理图<br>
+
+1. 电阻率随温度的变化曲线<br>
+
+1. 欧姆定律在强电场下的偏移， v-E 图<br>
+
+
+1. 附加光电导测载流子浓度装置<br>
+1. 直接复合注入浓度对载流子寿命的影响<br>
+
+1. 间接复合四个过程用能带图表示<br>
+
+1. “强n型区” 、 “高阻区” 在能带图上的表示<br>
+
+1. 俄歇复合的过程表示<br>
+
+1. pn结图示<br>
+1. 平衡时pn结能带图、电势分布、载流子分布<br>
+
+1. 外加偏压时pn结能带图变化、电势分布、载流子分布<br>
+
+1. 金半接触能带图<br>
+
+1. 存在表面态的金半接触能带图<br>
+
+1. MIS结构能带图，电荷分布图，分别讨论n型衬底和p型衬底；<br>
+
+1. MIS结构 表面电荷和 $V_s$ 的关系<br>
+
+1. MIS结构 C-V特性曲线，考虑频率，分n型衬底和p型衬底讨论<br>
+
+
+
+
+
+
+
+
+
+
+
+# 随温度变化的参数
+
+$J_s$
+反向击穿电压
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
