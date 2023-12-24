@@ -77,28 +77,42 @@
 
 # 公式
 1. 有效质量和能带的关系 <br>
-$\frac{1}{m^*} = \frac{d^2 E_k}{\hbar d k^2}$ <br>
+$\frac{1}{m^*} = \frac{d^2 E_k}{\hbar^2 d k^2}$ <br>
 $v = \frac{d E_k}{\hbar d k}$ <br>
+1. 常用公式 <br>
+$E = hv = h\frac{2 \pi}{\lambda}$ <br>
+$\frac{1}{2}m^* v^2 = \frac{3}{2} k_0 T$ <br>
+$p = mv = \hbar k$ <br>
+$\hbar = \frac{h}{2\pi}$ <br>
 1. 禁带宽度与温度的关系 <br>
 $E_g = E_g(0) - \frac{\alpha T^2}{\beta + T}$ <br>
 
 1. T=300K时的 $k_0T = 0.026eV$ <br>
-1. $k_0 = 1.38 \times 10^-23 J/K$ <br>
+$k_0 = 1.38 \times 10^-23 J/K$ <br>
+$h = 6.625 \times 10^{-34} J \cdot s$ <br>
+$m_0 = 9.108 \times 10^{-31} kg$ <br>
+本征硅 $E_g = 1.12eV$ <br>
+本征载流子浓度(300K)： $1.02 \times 10^{10} /cm^3$ <br>
+硅原子体密度： $5 \times 10^{22} /cm^3$ <br>
 1. 导带价带载流子浓度 <br>
 $n_0 = N_c exp(- \frac{E_c - E_F}{k_0 T})$ <br>
 $p_0 = N_v exp(\frac{E_v - E_F}{k_0 T})$ <br>
 $n_0 p_0 = n_i^2$ <br>
-$n_i = (N_C N_V)^{\frac{1}{2}} exp(- \frac{E_g}{2 k_0 T}) $ <br>
+$n_i = (N_c N_v)^{\frac{1}{2}} exp(- \frac{E_g}{2 k_0 T})$ <br>
+
 1. 杂质补偿度<br>
 $\gamma = 1 - \left| \frac{N_D - N_A}{N_D + N_A} \right|$ <br>
  
 1. 费米分布、玻尔兹曼分布表达式 <br>
 $f = \frac{1}{e^{\frac{E - E_F}{k_0 T}} - 1}$ <br>
 -- -- -- -- -- -- -- -- -- --<br>
-$f_B = - e^{\frac{E - E_F}{k_0 T}}$ <br>
+$f_B = e^{-\frac{E - E_F}{k_0 T}}$ <br>
 1. 电中性方程，以及不同温度区间载流子浓度、费米能级推导<br>
+$n_0 + p_A^- = p_0 + n_D^+$ <br>
 1. 简并条件下的载流子浓度公式 <br>
 $n_0 = \frac{2}{\sqrt{\pi}}N_c F_{\frac{1}{2}}(\zeta)$ <br>
+简并时的掺杂浓度： <br>
+$N_D = \frac{2 N_c}{\sqrt{\pi}} [1 + 2exp(\frac{E_F - E_c}{k_0 T}) exp(\frac{\Delta E_D}{k_0 T})] F_{1/2}(\frac{E_F - E_c}{k_0 T})$ <br>
 1. 迁移率和温度、掺杂的关系 <br>
 $\mu = \frac{1}{A T^{\frac{3}{2}} + BN T^{- \frac{3}{2}}}$ <br>
 1. 电导率公式 <br>
@@ -125,11 +139,11 @@ $U_s = s(\Delta p)$ <br>
 
 1. 单位时间扩散积累的空穴数  = 单位时间复合的空穴数<br>
 $D_p \frac{d^2 \Delta p}{d x^2} = \frac{\Delta p}{\tau}$ <br>
-借得稳态扩散方程为 $\Delta p(x) = A exp(- \frac{x}{L_p}) + B exp(\frac{x}{L_p})$ <br>
+解得稳态扩散方程为 $\Delta p(x) = A exp(- \frac{x}{L_p}) + B exp(\frac{x}{L_p})$ <br>
 其中的 $L_p = \sqrt{D_p \tau_p}$ 为扩散长度 <br>
 
 1. 爱因斯坦关系式 <br>
-$\frac{D_n}{\mu_n} = \frac{k_0 T}{q} = \frac{1}{40} V (300K下)$ <br>
+$\frac{D_n}{\mu_n} = \frac{k_0 T}{q} = \frac{1}{40} V (300K时)$ <br>
 
 1. 连续性方程 <br>
 $\frac{\partial p }{\partial t} = D_p \frac{\partial^2 p}{\partial x^2} - \mu_p E \frac{\partial p}{\partial x} - \mu_p p \frac{\partial E}{\partial x} - \frac{\Delta p}{\tau} + g_p$
@@ -161,6 +175,21 @@ $L_D = \sqrt{\frac{\epsilon_0 \epsilon_r k_0 T}{q^2 p_{p0}}}$ <br>
 1. 强反型条件 <br>
 $V_s \ge 2 V_B = 2\frac{k_0 T}{q} ln \frac{N_A}{n_i}$ <br>
 使得 $V_s = 2 V_B$ 的外加电压 $V_G$ 称为开启电压 <br>
+
+1. MIS结构四个区的空间电荷层电容 <br>
+绝缘层电容 $C_0 = \frac{\epsilon_0 \epsilon_{r0}}{d_0}$ <br>
+积累： $C_s = \frac{\epsilon_0 \epsilon_{rs}}{\sqrt{2} L_D} exp(- \frac{qV_s}{2 k_0 T})$ <br>
+平带： $C_s = C_{FBS} = \frac{\epsilon_0 \epsilon_{rs}}{L_D}$ <br>
+反型： $C_s = \frac{\epsilon_0 \epsilon_{rs}}{\sqrt{2} L_D} \frac{1}{\sqrt{\frac{qV_s}{k_0 T}}}$ <br>
+耗尽： $\frac{\epsilon_0 \epsilon_{rs}}{\sqrt{2} L_D} [\frac{n_{p0}}{p_{p0}} exp(\frac{q V_s}{k_0 T})]^{1/2}$ <br>
+掌握这几个公式，可以代入 $C = 1/(1/C_0 + 1/C_s)$ 解释C-V曲线的变化。<br>
+
+1. 耗尽层宽度最大值，当 $V_s = 2 V_B$ 时达到，此后不在增大。 <br>
+$x_{dm} = (\frac{4 \epsilon_0 \epsilon_{rs} k_0 T}{q^2 N_A} ln \frac{N_A}{n_i})^{1/2}$ <br>
+用去推导开启电压与温度的关系。<br>
+
+
+
 
 
 
@@ -207,35 +236,77 @@ $V_s \ge 2 V_B = 2\frac{k_0 T}{q} ln \frac{N_A}{n_i}$ <br>
 
 1. MIS结构 C-V特性曲线，考虑频率，分n型衬底和p型衬底讨论<br>
 
+1. 费米能级随温度和掺杂浓度的变化
+
+1. n+p和p+n的能带图表示
 
 
 
+# 参数讨论
+1. 禁带宽度 <br>
+$E_g = E_g(0) - \frac{\alpha T^2}{\beta + T}$ <br>
+温度升高，禁带宽度大致呈现 线性下降。
+1. 费米能级
+1. 平衡载流子浓度
+1. 本征载流子浓度
+1. 温度和掺杂浓度影响PN结哪些电学参数
+1. 第四章附加题
+1. 迁移率
+1. 电导率，电阻率
+1. 载流子寿命
+1. Js
+1. pn结正向电流密度，随温度增高而增加
+1. 反向击穿电压
+1. 开启电压
 
 
 
+# 判别半导体导电类型的方法
+热探针法；
+MIS结构测量C-V特性；
 
 
 
-
-# 随温度变化的参数
-
-$J_s$
-反向击穿电压
-
-
-
-
-
+# 测量非平衡载流子寿命的方法
+1. 直流光电导衰减法；高频光电导衰减法
+脉冲光照射半导体，在示波器上观察非平载随时间衰减的规律，由衰减曲线确定寿命
+1. 光磁电法，适合测量短寿命
+1. 扩散长度法
+1. 双脉冲法
+1. 漂移法
+1. 
 
 
+# 计算
+## CH1
+1. 原子面密度
+1. 
+## CH3
+1. 简并时掺杂浓度计算。 <br>
+## CH5
+1. 连续性方程的应用，给定条件解连续性方程。 <br>
+稳态下表面复合，求复合率，复合数；<br>
+求扩散长度、复合速度等。 <br>
+## CH6
+1. 给定参数，求pn结小注入下电流密度<br>
+1. 求接触电势差、势垒区宽度、势垒区最大电场 <br>
+1. 求势垒电容 <br>
+## CH7
+1. 给参数，求 $E_n$ ， 功函数等。 
+1. 给参数，求 $J_{sD} 和 J_{sT}$ 等参数。 <br>
+
+## CH8
+1. 推导开启电压VT
+1. 绝缘层电荷计算、平带电压计算
+1. 
 
 
-
-
-
-
-
-
+##
+1. 推导开启电压VT
+1. 平带电压 $V_{FB}$
+1. MIS电容计算
+1. 发生简并时的浓度
+1. 稳态表面复合
 
 
 
